@@ -1,0 +1,41 @@
+.infoWrapper {
+  max-width: 36rem;
+  width: 100%;
+  background-color: var(--white);
+  padding: 3rem;
+  border-radius: var(--radius);
+  position: relative;
+
+  & p {
+    margin-bottom: 0.5rem;
+  }
+
+  & span {
+    margin-right: 8px;
+    color: var(--dark-text-lighter);
+  }
+}
+
+.closeIcon {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  cursor: pointer;
+}
+
+.spinner {
+  border: 2px solid hsla(185, 100%, 62%, 0);
+  border-top-color: var(--green-lighter);
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  animation: spin 0.5s linear infinite;
+  margin-right: 5px;
+  display: inline-block;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

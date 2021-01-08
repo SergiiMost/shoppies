@@ -1,0 +1,135 @@
+/********* HEADER SECTION ************/
+.headerContentWrapper {
+  display: flex;
+  align-items: center;
+  padding: 10rem 2rem;
+  max-width: 120rem;
+  margin: 0 auto;
+  justify-content: space-around;
+}
+
+.headerTextWrapper {
+  max-width: 38rem;
+}
+
+.header {
+  background-color: var(--green-background-light);
+}
+
+.headerImage {
+  width: 100%;
+}
+
+.headerMain {
+  text-transform: capitalize;
+  color: var(--green-primary);
+}
+
+.headerSecondary {
+  position: relative;
+  z-index: 10;
+  margin-top: 1.5rem;
+  color: var(--dark-text);
+}
+
+@media screen and(max-width:950px) {
+  .headerContentWrapper {
+    flex-direction: column-reverse;
+  }
+
+  .headerTextWrapper {
+    margin-top: 2rem;
+  }
+}
+
+@media screen and(max-width:600px) {
+  .headerContentWrapper {
+    padding: 6rem 2rem;
+  }
+  .headerMain {
+    font-size: 3.4rem;
+    text-align: center;
+  }
+}
+
+/********* MAIN SECTION ************/
+.main {
+  background-image: radial-gradient(#d2eddd 1px, transparent 1px), radial-gradient(#d2eddd 1px, transparent 1px);
+  background-position: 0 0, 20px 19px;
+  background-size: 40px 40px;
+}
+
+.mainContentWrapper {
+  max-width: 95rem;
+  margin: 0 auto;
+  padding: 8rem 2rem;
+}
+
+.moviesWrapper {
+  background-color: var(--yellow-background-lighter);
+  min-height: 40rem;
+  border-bottom-left-radius: var(--radius);
+  border-bottom-right-radius: var(--radius);
+  padding: 0 5rem;
+}
+
+.moviesInputWrapper {
+  display: flex;
+  flex-direction: column;
+  max-width: 40rem;
+  margin: 0 auto;
+  padding: 2.5rem 0;
+  position: relative;
+}
+
+.moviesInput {
+  border-radius: 5px;
+  border: 1px solid #d2d2d2;
+  padding: 8px 0 8px 25px;
+  outline: none;
+  font-family: 'Nunito', sans-serif;
+  font-size: 1.6rem;
+  background: var(--yellow-background-lighter);
+
+  &Label {
+    color: var(--dark-text-lighter);
+    margin-bottom: 5px;
+  }
+}
+
+.moviesSearchIcon {
+  position: absolute;
+  top: 65px;
+  left: 6px;
+}
+
+.animationWrapper {
+  display: flex;
+  align-items: center;
+}
+
+.moviesContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+// Load More
+.loadMore {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 2.5rem;
+
+  &Data {
+    margin-bottom: 5px;
+    padding-top: 5px;
+    border-top: 1px solid var(--green-lighter);
+    align-self: center;
+  }
+}
+
+@media screen and(max-width:600px) {
+  .moviesSearchIcon {
+    top: 60px;
+  }
+}

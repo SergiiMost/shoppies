@@ -1,0 +1,29 @@
+.nominationsWrapper {
+  border-top-left-radius: var(--radius);
+  border-top-right-radius: var(--radius);
+  background-color: var(--yellow-background-darker);
+}
+
+.nominationsHeader {
+  text-align: center;
+  padding: 2.5rem;
+  color: var(--green-primary);
+  font-weight: 600;
+  & span {
+    margin-left: 3px;
+  }
+}
+
+.nominatedList {
+  // padding-bottom: 2.5rem;
+  list-style-position: inside;
+  margin: 0 2.5rem;
+
+  & li:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+
+  & li:last-child {
+    padding-bottom: 2.5rem;
+  }
+}

@@ -1,0 +1,26 @@
+.loadingButton {
+  background-color: var(--green-lighter);
+  color: white;
+  letter-spacing: 1px;
+  border: none;
+  display: inline-flex;
+  align-items: center;
+  align-self: center;
+}
+
+.spinner {
+  border: 2px solid hsla(185, 100%, 62%, 0);
+  border-top-color: white;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  animation: spin 0.5s linear infinite;
+  margin-right: 5px;
+  display: inline-block;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

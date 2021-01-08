@@ -1,0 +1,17 @@
+.nominateButton {
+  position: relative;
+  background-color: var(--green-lighter);
+  color: var(--white);
+  border: none;
+  display: flex;
+  align-items: center;
+
+  &:hover {
+    opacity: 0.75;
+  }
+}
+
+.confetti {
+  position: absolute;
+  left: -50%;
+}
