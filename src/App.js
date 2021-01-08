@@ -183,14 +183,16 @@ function App() {
           <NominationsList nominated={nominated} removeNomination={handleRemoveNomination} />
           <div className={styles.moviesWrapper}>
             <div className={styles.moviesInputWrapper}>
-              <label className={styles.moviesInputLabel}>Movie title</label>
+              <label className={styles.moviesInputLabel} htmlFor='title'>
+                Movie title
+              </label>
               <input
                 className={styles.moviesInput}
                 type='text'
                 id='title'
                 onChange={(e) => setInput(e.target.value)}
                 value={input}
-              ></input>
+              />
               <BiSearch className={styles.moviesSearchIcon} color='#525158' size='16px' />
             </div>
             {loading && <LoadingAnimation />}
